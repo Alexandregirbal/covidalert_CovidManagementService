@@ -13,11 +13,6 @@ public class Covid {
     private long covid_id;
     private String forme;
     private String detail;
-    // Liste des covids positifs
-    @OneToMany(mappedBy = "covid")
-    private List<HaveCovid> listCovided;
-
-
 
     public long getCovid_id() {
         return covid_id;

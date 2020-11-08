@@ -14,12 +14,6 @@ public class Test {
     private String type;
     private String label;
 
-    // Liste des tests effectués par les users
-    @OneToMany(mappedBy = "test")
-    private List<DoTest> listTest;
-
-
-
     public long getTest_id() {
         return test_id;
     }
