@@ -9,7 +9,7 @@ public class HaveCovid {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private long have_covid_id;
-    private long user_id;
+    private Long userId;
     private long covid_id;
     private Date covid_date_begin;
     private int covid_duration;
@@ -24,12 +24,12 @@ public class HaveCovid {
         this.have_covid_id = have_covid_id;
     }
 
-    public long getUser_id() {
-        return user_id;
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setUser_id(long user_id) {
-        this.user_id = user_id;
+    public void setUserId(Long user_id) {
+        this.userId = user_id;
     }
 
     public long getCovid_id() {
