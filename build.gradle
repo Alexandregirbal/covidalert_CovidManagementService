@@ -16,6 +16,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-jetty'
 	runtimeOnly 'org.postgresql:postgresql'
+	compile group: 'org.keycloak', name: 'keycloak-spring-boot-starter', version: '11.0.2'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
